@@ -1,0 +1,12 @@
+CREATE DATABASE chatbot;
+
+CREATE TABLE chatbot_responses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    query VARCHAR(255) NOT NULL,
+    response TEXT NOT NULL
+);
+
+INSERT INTO chatbot_responses (query, response)
+VALUES ('hello', 'Hi there! How can I assist you?'),
+       ('bye', 'Goodbye! Have a great day.');
+       
